@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: dimgray;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    min-height: 100vh;
+}
+#titulo{
+    width: 500px;
+    border: 1px solid rebeccapurple;
+    text-align: center;
+    padding: 10px;
+}
+.container{
+    width: 500px;
+    height: 950px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.placeholder-texto::placeholder{
+    color:burlywood;
+}
+.quociente{
+    text-align: center;
+}
+input{
+    padding: 5px;
+    margin-bottom: 5px;
+    background: darkslategrey;
+    color:burlywood;
+}
+p{
+    display: inline;
+}
+#msqp{
+    width: 200px;
+}
+#dezqe{
+    width: 200px;
+    margin-right: 20px;
+}
+#vinteqe{
+    width: 200px;
+    margin-right: 20px;
+}
+#oitentaqe{
+    width: 200px;
+    margin-right: 20px;
+}
+#spanoitenta{
+    margin-top: 20px;
+}

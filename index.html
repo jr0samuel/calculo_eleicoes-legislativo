@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo da Eleição</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icone-urna.jpg" type="image/jpg">
+</head>
+<body>
+    <main>
+    <div id="titulo"><h2>Cálculo da Eleição para Vereador</h2></div>
+    <article class="container">
+        <div class="quociente" id="divqe">
+            <h3>Comece calculando o Quociente Eleitoral (QE)</h3><br>
+            <form action="">
+                <input id="vv" class="placeholder-texto" placeholder="Votos Válidos">
+                <input type="text" name="" id="nv" class="placeholder-texto" placeholder="Número de Vagas">
+                <br><br>
+                <input type="button" value="Calcular" onclick="calcularqe()">
+            </form>
+            <p id="resultadoqe"></p>
+        </div>
+        <br><hr><br>
+        <div class="quociente" id="divqp">
+            <h3>Agora calcule o Quociente Partidário (QP) de cada chapa</h3><br>
+            <form action="">
+                <input type="text" name="" id="vc" class="placeholder-texto" placeholder="Votos recebidos pela chapa">
+                <input type="text" name="" id="qe" class="placeholder-texto" placeholder="Quociente Eleitoral">
+                <br><br>
+                <input type="button" value="Calcular" onclick="calcularqp()">
+            </form>
+            <p id="resultadoqp"></p>
+            <br><br>
+            <h3>O candidato só será eleito se tiver recebido uma quantidade de votos pelo menos igual a 10% do QE</h3><br>
+            <form>
+                <span>
+                    <input type="text" class="placeholder-texto" placeholder="Digite o QE para calcular 10%" id="dezqe">
+                    <input type="button" value="Calcular" onclick="calcular10qe()">
+                </span>
+            </form>
+            <p id="resultado10qe"></p>
+        </div>
+        <br><hr><br>
+        <div class="quociente" id="divms">
+            <h3>Após o QP, os candidatos são eleitos pelo Cálculo da Sobra</h3><br>
+            <form>
+                <input type="text" class="placeholder-texto" placeholder="Votos recebidos pela chapa" id="msvc">
+                <input type="text" class="placeholder-texto" placeholder="Quociente Partidário da chapa" id="msqp">
+                <br><br>
+                <input type="button" value="Calcular" onclick="calcularms1()">
+            </form>
+            <p id="resultadomsum"></p>
+        </div>
+        <br>
+        <div class="quociente" id="divms1">
+            <h3>Se a quantidade de votos recebidos pela chapa for pelo menos 80% do QE, puxa o candidato que teve a quantidade de votos igual ou maior que 20% do QE</h3><br>
+            <form>
+                <span>
+                    <input type="text" class="placeholder-texto" placeholder="Digite o QE para calcular 20%" id="vinteqe">
+                    <input type="button" value="Calcular" onclick="calcular20qe()">
+                </span>
+            </form>
+            <p id="resultado20qe"></p>
+            <form id="spanoitenta">
+                <span>
+                    <input type="text" class="placeholder-texto" placeholder="Digite o QE para calcular 80%" id="oitentaqe">
+                    <input type="button" value="Calcular" onclick="calcular80qe()">
+                </span>
+            </form>
+            <p id="resultado80qe"></p>
+        </div>
+        <br><hr>
+    </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
