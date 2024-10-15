@@ -41,9 +41,13 @@ Se houver empate nessa conta e também na quantidade de votos válidos que os pa
 Não esqueça de nenhuma regra: a regra dos 20%, dos 80%, etc.
 Se, em algum momento no cálculo da sobra, não houver mais candidato com votos pelo menos igual a 20% do quociente eleitoral, então as vagas serão preenchidas pelos partidos/chapas que tiveram os maiores resultados, ou seja, é apenas uma conta e distribui uma vaga para o primeiro colocado na conta, depois o segundo colocado, etc, mas isso é praticamente impossível de acontecer, mas se acontecer, essa cláusula está aí.
 
+Só mais um detalhe: os candidatos só podem ser eleitos se o partido/chapa tiver o quociente partidário pelo menos igual a 1. E depois que as vagas na câmara são todas preenchidas, os outros candidatos desses partidos/chapas ficam como suplentes. Dessa forma, os candidatos dos partidos/chapas que tiveram o quociente partidário menor que 1 não ficam nem como suplentes.
+
 Todos esses cálculos também valem para a eleição de deputados, é a mesma forma de calcular. Acho que nem os próprios candidatos entendem toda essa criatividade do pessoal do TSE. Será que o ministro sabe fazer essas contas?
 
 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 
 

@@ -46,3 +46,10 @@ function calcularms2(){
     let valormsqpdois = parseInt(msqpdois.value)
     document.getElementById('resultadomsdois').innerHTML = Math.floor(valormsvcdois / (valormsqpdois + 1 + 1))
 }
+function calcularms3(){
+    let msvctres = document.querySelector('#msvctres')
+    let msqptres = document.querySelector('#msqptres')
+    let valormsvctres = msvctres.value
+    let valormsqptres = parseInt(msqptres.value)
+    document.getElementById('resultadomstres').innerHTML = Math.floor(valormsvctres / (valormsqptres + 1 + 2))
+}
