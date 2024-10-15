@@ -20,7 +20,7 @@ function calcularqp(){
 function calcular10qe(){
     let dezqe = document.querySelector('#dezqe')
     let valordezqe = dezqe.value
-    document.getElementById('resultado10qe').innerHTML = valordezqe * 0.1//Math.floor
+    document.getElementById('resultado10qe').innerHTML = Math.floor(valordezqe * 0.1)
 }
 function calcularms1(){
     let msvc = document.querySelector('#msvc')
@@ -32,10 +32,17 @@ function calcularms1(){
 function calcular20qe(){
     let vinteqe = document.querySelector('#vinteqe')
     let valorvinteqe = vinteqe.value
-    document.getElementById('resultado20qe').innerHTML = valorvinteqe * 0.2//Math.floor
+    document.getElementById('resultado20qe').innerHTML = Math.floor(valorvinteqe * 0.2)
 }
 function calcular80qe(){
     let oitentaqe = document.querySelector('#oitentaqe')
     let valoroitentaqe = oitentaqe.value
-    document.getElementById('resultado80qe').innerHTML = valoroitentaqe * 0.8//Math.floor
+    document.getElementById('resultado80qe').innerHTML = Math.floor(valoroitentaqe * 0.8)
+}
+function calcularms2(){
+    let msvcdois = document.querySelector('#msvcdois')
+    let msqpdois = document.querySelector('#msqpdois')
+    let valormsvcdois = msvcdois.value
+    let valormsqpdois = parseInt(msqpdois.value)
+    document.getElementById('resultadomsdois').innerHTML = Math.floor(valormsvcdois / (valormsqpdois + 1 + 1))
 }

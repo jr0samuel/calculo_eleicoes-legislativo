@@ -9,9 +9,9 @@
 </head>
 <body>
     <main>
-    <div id="titulo"><h2>Cálculo da Eleição para Vereador</h2></div>
+    <a href="texto.txt" target="_blank" rel="noreferrer noopener"><div id="titulo"><h2>Cálculo da Eleição para Vereadores e Deputados Estaduais e Federais</h2></div></a>
     <article class="container">
-        <div class="quociente" id="divqe">
+        <div class="quociente">
             <h3>Comece calculando o Quociente Eleitoral (QE)</h3><br>
             <form action="">
                 <input id="vv" class="placeholder-texto" placeholder="Votos Válidos">
@@ -22,7 +22,7 @@
             <p id="resultadoqe"></p>
         </div>
         <br><hr><br>
-        <div class="quociente" id="divqp">
+        <div class="quociente">
             <h3>Agora calcule o Quociente Partidário (QP) de cada chapa</h3><br>
             <form action="">
                 <input type="text" name="" id="vc" class="placeholder-texto" placeholder="Votos recebidos pela chapa">
@@ -42,7 +42,7 @@
             <p id="resultado10qe"></p>
         </div>
         <br><hr><br>
-        <div class="quociente" id="divms">
+        <div class="quociente">
             <h3>Após o QP, os candidatos são eleitos pelo Cálculo da Sobra</h3><br>
             <form>
                 <input type="text" class="placeholder-texto" placeholder="Votos recebidos pela chapa" id="msvc">
@@ -53,7 +53,7 @@
             <p id="resultadomsum"></p>
         </div>
         <br>
-        <div class="quociente" id="divms1">
+        <div class="quociente">
             <h3>Se a quantidade de votos recebidos pela chapa for pelo menos 80% do QE, puxa o candidato que teve a quantidade de votos igual ou maior que 20% do QE</h3><br>
             <form>
                 <span>
@@ -69,6 +69,17 @@
                 </span>
             </form>
             <p id="resultado80qe"></p>
+        </div>
+        <br><hr><br>
+        <div class="quociente">
+            <h3>O próximo cálculo é o cálculo da sobra somente para o partido/chapa que puxou um candidato pelo cálculo anterior</h3><br>
+            <form>
+                <input type="text" class="placeholder-texto" placeholder="Votos recebidos pela chapa" id="msvcdois">
+                <input type="text" class="placeholder-texto" placeholder="Quociente Partidário da chapa" id="msqpdois">
+                <br><br>
+                <input type="button" value="Calcular" onclick="calcularms2()">
+            </form>
+            <p id="resultadomsdois"></p>
         </div>
         <br><hr>
     </article>

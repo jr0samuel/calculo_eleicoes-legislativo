@@ -63,4 +63,5 @@ O resultado do cálculo da sobra não tem arredondamento, apenas cancela todos o
 
 Se ainda sobrar vaga, faz essa conta de novo, mas o partido/chapa que preencheu a vaga na primeira conta vai ter a conta alterada, fica assim: os votos recebidos pela chapa dividido pelo quociente partidário da chapa + 1 + 1 (esse 1 é a vaga preenchida).
 
-Nesse resumo, eu omiti alguns detalhes, então você precisa largar a preguiça e ler a explicação toda, porém, esse resumo já vai te ajudar a calcular os vereadores eleitos na sua cidade.
+
+Esse resumo é o suficiente para calcular os vereadores eleitos na sua cidade e também para calcular os deputados estaduais e federais eleitos, pois as contas são as mesmas, mas se você quiser aprender mais coisas, você precisa largar a preguiça e ler a explicação toda.

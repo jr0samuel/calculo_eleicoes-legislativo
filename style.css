@@ -14,6 +14,10 @@ body{
     margin-top: 30px;
     min-height: 100vh;
 }
+a {
+    text-decoration: none;
+    color:darkgoldenrod;
+}
 #titulo{
     width: 500px;
     border: 1px solid rebeccapurple;
@@ -22,7 +26,7 @@ body{
 }
 .container{
     width: 500px;
-    height: 950px;
+    height: 1150px;
     border: 1px solid black;
     padding: 10px;
 }
@@ -58,4 +62,7 @@ p{
 }
 #spanoitenta{
     margin-top: 20px;
+}
+#msqpdois{
+    width: 200px;
 }
