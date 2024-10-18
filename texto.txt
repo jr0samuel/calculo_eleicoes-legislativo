@@ -1,8 +1,6 @@
 Você já se perguntou como funciona o cálculo para eleger os vereadores?
 Bora lá
 
-Vou explicar com detalhes, e depois mostro apenas as contas de forma rápida. Se você tiver preguiça de ler, vá direto para o final, onde falo rápido.
-
 Primeiro, precisa saber a quantidade de votos válidos. Os votos válidos são todos os votos, exceto os brancos e nulos.
 
 (Um detalhe: sabia que existem dois tipos de voto nulo? 1- a pessoa digitou errado, por exemplo, queria votar em 36, mas digitou 39; 2- a pessoa digitou qualquer número, por exemplo, 00 ou qualquer número sem candidato. O voto branco deixa claro que essas pessoas não quiseram votar em alguém, mas o voto nulo deixa duas possibilidades: ou votou no número errado sem querer ou digitou qualquer número por querer, acho que a segunda possibilidade é mais comum)
@@ -51,10 +49,7 @@ Todos esses cálculos também valem para a eleição de deputados, é a mesma fo
 
 
 
-Agora vou falar rápido se você teve preguiça para ler a explicação detalhada.
-
-Você já se perguntou como funciona o cálculo para eleger os vereadores?
-Bora lá
+Resumo para revisão
 
 Descubra o quociente eleitoral. É a divisão entre os votos válidos e a quantidade de vagas na câmara. Precisa fazer um arredondamento da seguinte forma: se o resultado for, por exemplo, 15,0 ou 15,1 ou 15,2 ou 15,3 ou 15,4 ou 15,5, o arredondamento fica 15, mas se o resultado for 15,6 ou 15,7 ou 15,8 ou 15,9, o arredondamento fica 16.
 
