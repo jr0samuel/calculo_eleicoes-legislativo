@@ -4,7 +4,7 @@ Veja esse sistema em ação nesse link
 https://jsfiddle.net/j_r_Samuel_Jr/z52fo4xh/8/
 
 Esse link tem a explicação do cálculo
-https://jsfiddle.net/j_r_Samuel_Jr/r9cj8tkw/7/
+https://jsfiddle.net/j_r_Samuel_Jr/r9cj8tkw/11/
 
 ou nesse link
 https://codepen.io/jrSamuel-Jr/pen/BaXROVz
