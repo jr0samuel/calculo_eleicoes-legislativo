@@ -24,8 +24,8 @@ https://www.tre-sp.jus.br/++theme++justica_eleitoral/pdfjs/web/viewer.html?file=
 #
 #
 # Breve Análise de Dados
-### Usei o Jupyter Notebook dentro do VSCode (porque não o tenho instalado em minha máquina)
-#### Primeiro, precisa dos dados. No meu caso, eu fiz a tabela na mão com base nas informações de um site, mas como minha cidade é pequena, não foi difícil
+### Usei o Jupyter Notebook dentro do VSCode
+#### Primeiro, precisa dos dados: candidatos, votos, partidos/chapas. No meu caso, eu fiz a tabela na mão com base nas informações de um site, mas como a cidade que escolhi é pequena, não foi difícil
 
 ![Captura de tela 1](https://github.com/user-attachments/assets/80e65ae4-9a38-40c8-ae4d-212f0d422ee7)
 
