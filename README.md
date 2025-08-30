@@ -6,12 +6,6 @@ https://jsfiddle.net/o962gm1u/
 ou nesse link
 https://codepen.io/jrSamuel-Jr/pen/BaXROVz
 
-Veja minha explicação nesse link
-https://jsfiddle.net/j_r_Samuel_Jr/r9cj8tkw/13/
-
-ou nesse link
-https://codepen.io/jrSamuel-Jr/pen/xxvrZLz
-
 #
 
 Links da Justiça Eleitoral com explicações
