@@ -16,7 +16,7 @@ body{
 }
 a {
     text-decoration: none;
-    color:darkgoldenrod;
+    color:#111;
 }
 #titulo{
     width: 500px;
@@ -26,9 +26,12 @@ a {
 }
 .container{
     width: 500px;
-    height: 1400px;
+    height: 1700px;
     border: 1px solid black;
     padding: 10px;
+}
+.placeholder-texto{
+    width: 220px;
 }
 .placeholder-texto::placeholder{
     color:burlywood;
@@ -45,27 +48,6 @@ input{
 p{
     display: inline;
 }
-#msqp{
-    width: 200px;
-}
-#dezqe{
-    width: 200px;
-    margin-right: 20px;
-}
-#vinteqe{
-    width: 200px;
-    margin-right: 20px;
-}
-#oitentaqe{
-    width: 200px;
-    margin-right: 20px;
-}
-#spanoitenta{
-    margin-top: 20px;
-}
-#msqpdois{
-    width: 200px;
-}
-#msqptres{
-    width: 200px;
+.texto{
+    margin: 1px 50px;
 }
