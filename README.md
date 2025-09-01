@@ -1,9 +1,11 @@
 # Cálculo para Eleições do Legislativo (vereadores, deputados estaduais e federais)
 
-Veja o sistema em ação nesse link:
+Você pode ver o sistema no site:  
+https://calculodaseleicoes.vercel.app/
+
+Se quiser ver o sistema junto com o código, há os dois links abaixo:  
 https://jsfiddle.net/j_r_Samuel_Jr/d0o68tuL/4/
 
-ou aqui:
 https://codepen.io/jrSamuel-Jr/pen/BaXROVz
 
 #
