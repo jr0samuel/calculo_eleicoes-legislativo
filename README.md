@@ -1,9 +1,9 @@
 # Cálculo para Eleições do Legislativo (vereadores, deputados estaduais e federais)
 
-Veja o sistema em ação nesse link
-https://jsfiddle.net/j_r_Samuel_Jr/d0o68tuL/1/
+Veja o sistema em ação nesse link:
+https://jsfiddle.net/j_r_Samuel_Jr/d0o68tuL/4/
 
-ou aqui
+ou aqui:
 https://codepen.io/jrSamuel-Jr/pen/BaXROVz
 
 #
