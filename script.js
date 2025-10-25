@@ -3,11 +3,13 @@ function calcularqe(){
     let nv = document.querySelector('#nv')
     let valorvv = vv.value
     let valornv = nv.value
-    let conta = (valorvv / valornv) % 1
-    if (conta <= 0.5) {
-        document.getElementById('resultadoqe').innerHTML = Math.floor(valorvv / valornv)
-    } else {
-        document.getElementById('resultadoqe').innerHTML = Math.ceil(valorvv / valornv)
+    let conta = (valorvv / valornv)
+    let decimal = conta - Math.trunc(conta)
+    let primeiroDecimal = Math.trunc(decimal * 10)
+    if(primeiroDecimal <= 5){
+        document.getElementById('resultadoqe').innerHTML = Math.floor(valorvv/valornv)
+    } else{
+        document.getElementById('resultadoqe').innerHTML = Math.ceil(conta)
     }
 }
 function calcularqp(){
