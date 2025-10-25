@@ -9,100 +9,89 @@
 </head>
 <body>
     <main>
-    <div id="titulo"><h2>Cálculo da Eleição para Vereadores e Deputados Estaduais e Federais</h2></div>
-    <article class="container">
-        <div class="quociente">
-            <h3>Comece calculando o Quociente Eleitoral (QE)</h3><br>
-            <form action="">
-                <input id="vv" class="placeholder-texto" placeholder="Votos Válidos da Eleição">
-                <input type="text" name="" id="nv" class="placeholder-texto" placeholder="Nº de Vagas do Parlamento">
+        <div id="titulo"><h2>Cálculo da Eleição para Vereadores e Deputados Estaduais e Federais</h2></div>
+        <article class="container">
+            <div class="quociente">
+                <h3>Comece calculando o Quociente Eleitoral (QE)</h3><br>
+                <form action="">
+                    <input id="vv-e" class="placeholder-texto" placeholder="Votos Válidos da Eleição">
+                    <input id="num-vp" class="placeholder-texto" placeholder="Nº de Vagas do Parlamento">
+                    <br><br>
+                    <input type="button" value="Calcular" onclick="calcularQE()">
+                </form>
+                <p id="resultado-qe"></p>
+            </div>
+            <br><hr><br>
+            <div class="quociente">
+                <h3>Agora calcule o Quociente Partidário (QP) de cada partido/coligação</h3><br>
+                <form action="">
+                    <input id="vv-pc" class="placeholder-texto" placeholder="Votos válidos do partido/coligação">
+                    <input id="qe" class="placeholder-texto" placeholder="Quociente Eleitoral">
+                    <br><br>
+                    <input type="button" value="Calcular" onclick="calcularQP()">
+                </form>
+                <p id="resultado-qp"></p>
                 <br><br>
-                <input type="button" value="Calcular" onclick="calcularqe()">
-            </form>
-            <p id="resultadoqe"></p>
-        </div>
-        <br><hr><br>
-        <div class="quociente">
-            <h3>Agora calcule o Quociente Partidário (QP) de cada partido/coligação</h3><br>
-            <form action="">
-                <input type="text" name="" id="vpc" class="placeholder-texto" placeholder="Votos válidos do partido/coligação">
-                <input type="text" name="" id="qe" class="placeholder-texto" placeholder="Quociente Eleitoral">
-                <br><br>
-                <input type="button" value="Calcular" onclick="calcularqp()">
-            </form>
-            <p id="resultadoqp"></p>
+                <h3>Se o partido/coligação teve QP igual a zero, não vai eleger agora. Se o partido/coligação teve QP igual a dois, confira se os dois candidatos mais votados receberam votos nominais pelo menos igual a 10% do QE, se um deles não recebeu, a vaga fica para a Sobra, e assim sucessivamente</h3><br>
+                <form>
+                    <span>
+                        <input class="placeholder-texto" placeholder="Digite o QE para calcular 10%" id="dezQE">
+                        <input type="button" value="Calcular" onclick="calcular10QE()">
+                    </span>
+                </form>
+                <p id="resultado10QE"></p>
+            </div>
             <br><br>
-            <h3>O candidato só será eleito se tiver recebido uma quantidade de votos pelo menos igual a 10% do QE</h3><br>
-            <form>
-                <span>
-                    <input type="text" class="placeholder-texto" placeholder="Digite o QE para calcular 10%" id="dezqe">
-                    <input type="button" value="Calcular" onclick="calcular10qe()">
-                </span>
-            </form>
-            <p id="resultado10qe"></p>
-        </div>
-        <br><hr><br>
-        <div class="quociente">
-            <h3>Após o QP, os candidatos são eleitos pelo Cálculo da Sobra</h3>
-            <br><hr>
-        </div>
-        <br>
-        <div class="quociente">
-            <h3>O partido/coligação pode participar da sobra se tiver recebido votos válidos pelo menos igual a 80% do QE</h3><br>
-            <form id="spanoitenta">
-                <span>
-                    <input type="text" class="placeholder-texto" placeholder="Digite o QE para calcular 80%" id="oitentaqe">
-                    <input type="button" value="Calcular" onclick="calcular80qe()">
-                </span>
-            </form>
-            <p id="resultado80qe"></p><br><br>
-            <h3>Faça o cálculo da sobra do partido/coligação que teve votos válidos pelo menos igual a 80% do QE</h3><br>
-            <form>
-                <input type="text" class="placeholder-texto" placeholder="Votos válidos do partido/coligação" id="msvpc">
-                <input type="text" class="placeholder-texto" placeholder="QP do partido/coligação" id="msqp">
-                <br><br>
-                <input type="button" value="Calcular" onclick="calcularms1()">
-            </form>
-            <p id="resultadomsum"></p><br><br>
-            <h3>O candidato só entra se recebeu votos pelo menos igual a 20% do QE</h3><br>
-            <form>
-                <span>
-                    <input type="text" class="placeholder-texto" placeholder="Digite o QE para calcular 20%" id="vinteqe">
-                    <input type="button" value="Calcular" onclick="calcular20qe()">
-                </span>
-            </form>
-            <p id="resultado20qe"></p>
-        </div>
-        <br><hr><br>
-        <div class="quociente">
-            <h3>O próximo cálculo é o cálculo da sobra somente para o partido/coligação que ganhou uma vaga na sobra</h3><br>
-            <form>
-                <input type="text" class="placeholder-texto" placeholder="Votos válidos do partido/coligação" id="msvpcdois">
-                <input type="text" class="placeholder-texto" placeholder="QP do partido/coligação" id="msqpdois">
-                <br><br>
-                <input type="button" value="Calcular" onclick="calcularms2()">
-            </form>
-            <p id="resultadomsdois"></p>
-        </div>
-        <br><hr><br>
-        <div class="quociente">
-            <h3>O próximo cálculo é o cálculo da sobra somente para o partido/coligação que ganhou duas vagas na sobra</h3><br>
-            <form>
-                <input type="text" class="placeholder-texto" placeholder="Votos válidos do partido/coligação" id="msvpctres">
-                <input type="text" class="placeholder-texto" placeholder="QP do partido/coligação" id="msqptres">
-                <br><br>
-                <input type="button" value="Calcular" onclick="calcularms3()">
-            </form>
-            <p id="resultadomstres"></p>
-        </div>
-        <br><hr>
-        <br>
-        <br><div style="text-align: center;"><b><a href="explicacao.html" target="_blank" rel="noreferrer noopener"><u><i>Clique aqui para ver a explicação dos cálculos</i></u></a></b></div>
-        <br><br>
-        <hr>
-    </article>
+            <hr><br>
+            <div class="quociente">
+                <h3>Após os cálculos anteriores, começam as rodadas do Cálculo da Sobra</h3>
+                <br><hr>
+            </div>
+            <br>
+            <div class="quociente">
+                <h3>O partido/coligação só pode participar da sobra se tiver recebido votos válidos pelo menos igual a 80% do QE</h3><br>
+                <form>
+                    <span>
+                        <input class="placeholder-texto" placeholder="Digite o QE para calcular 80%" id="oitentaQE">
+                        <input type="button" value="Calcular" onclick="calcular80QE()">
+                    </span>
+                </form>
+                <p id="resultado80QE"></p><br><br>
+                <h3>Na primeira rodada, esse cálculo vale para todos os partidos/coligações, depois vale só para os que não conseguiram vagas durante as rodadas</h3><br>
+                <form>
+                    <input class="placeholder-texto" placeholder="Votos válidos do partido/coligação" id="ms-vv-pc">
+                    <input class="placeholder-texto" placeholder="QP do partido/coligação" id="ms-qp-pc">
+                    <br><br>
+                    <input type="button" value="Calcular" onclick="calcularMS1()">
+                </form>
+                <p id="resultado-ms-um"></p><br><br>
+                <h3>Confira qual partido/coligação venceu a rodada e veja se o candidato mais votado recebeu votos nominais pelo menos igual a 20% do QE, se não recebeu, veja o candidato do partido/coligação que ficou em segundo na rodada, e assim sucessivamente</h3><br>
+                <form>
+                    <span>
+                        <input class="placeholder-texto" placeholder="Digite o QE para calcular 20%" id="vinteQE">
+                        <input type="button" value="Calcular" onclick="calcular20QE()">
+                    </span>
+                </form>
+                <p id="resultado20QE"></p>
+            </div>
+            <br><hr><br>
+            <div class="quociente">
+                <h3>O cálculo abaixo vale somente para os partidos/coligações que ganharam alguma vaga na sobra, para isso, digite também a quantidade de vagas obtidas</h3><br>
+                <form>
+                    <input class="placeholder-texto" placeholder="Votos válidos do partido/coligação" id="ms-vv-pc-x">
+                    <input class="placeholder-texto" placeholder="QP do partido/coligação" id="ms-qp-pc-x">
+                    <input class="placeholder-texto" placeholder="Vagas obtidas na sobra" id="ms-vs-pc-x">
+                    <br><br>
+                    <input type="button" value="Calcular" onclick="calcularMSX()">
+                </form>
+                <p id="resultadomsx"></p><br>
+            </div>
+            <br><hr><br>
+            <br><div style="text-align: center;"><b><a href="explicacao.html" target="_blank"><u><i>Clique aqui para ver a explicação dos cálculos</i></u></a></b></div>
+            <br><br>
+            <hr>
+        </article>
     </main>
-
     <script src="script.js"></script>
 </body>
 </html>
