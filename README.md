@@ -11,7 +11,7 @@ https://codepen.io/jrSamuel-Jr/pen/BaXROVz
 Aqui é a minha explicação:  
 https://codepen.io/jrSamuel-Jr/pen/xxvrZLz
 
-https://jsfiddle.net/j_r_Samuel_Jr/r9cj8tkw/16/
+https://jsfiddle.net/j_r_Samuel_Jr/r9cj8tkw/17/
 
 #
 
