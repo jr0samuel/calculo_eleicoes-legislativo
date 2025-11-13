@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: dimgray;
+    background-color: rgb(113, 113, 113);
     color: black;
     display: flex;
     flex-direction: column;
@@ -14,21 +14,31 @@ body{
     margin-top: 30px;
     min-height: 100vh;
 }
-a {
-    text-decoration: none;
-    color:#111;
+main {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #titulo{
-    width: 500px;
     border: 1px solid rebeccapurple;
     text-align: center;
     padding: 10px;
 }
 .container{
-    width: 500px;
-    height: 1600px;
     border: 1px solid black;
     padding: 10px;
+}
+.container2{
+    border: 1px solid rebeccapurple;
+    padding: 10px;
+    width: 500px;
+}
+input{
+    padding: 5px;
+    margin-bottom: 5px;
+    background: darkslategrey;
+    color:burlywood;
 }
 .placeholder-texto{
     width: 220px;
@@ -39,25 +49,31 @@ a {
 .quociente{
     text-align: center;
 }
-input{
-    padding: 5px;
-    margin-bottom: 5px;
-    background: darkslategrey;
-    color:burlywood;
-}
 p{
     display: inline;
 }
 .texto{
     margin: 1px 50px;
 }
+a {
+    text-decoration: none;
+    color:#111;
+}
+.artigo {
+    text-align: center;
+}
+.artigo-texto:hover {
+    color: burlywood;
+}
 @media screen and (max-width: 525px) {
-    #titulo {
-        width: 305px;
-    }
-    .container {
+    main {
         width: 305px;
         height: auto;
         min-height: 100vh;
+    }
+    .container2{
+        width: 305px;
+        height: auto;
+        min-height: auto;
     }
 }
