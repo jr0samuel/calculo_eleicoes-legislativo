@@ -59,6 +59,6 @@ function calcularMSX() {
     let conta = (vvPC / (qpPC + 1 + vsPC))
     document.getElementById('resultadomsx').innerHTML = Math.floor(conta)
     if (isNaN(conta) || !isFinite(conta) || vvPC === '' || qpPC === '' || vsPC === '') {
-        document.getElementById('resultado-msx').innerHTML = ''
+        document.getElementById('resultadomsx').innerHTML = ''
     }
 }
