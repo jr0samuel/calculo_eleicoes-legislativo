@@ -13,6 +13,12 @@ function calcularQE(){
         document.getElementById('resultado-qe').innerHTML = ""
     }
 }
+document.querySelector('#vv-e').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') calcularQE();
+});
+document.querySelector('#num-vp').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') calcularQE();
+});
 function calcularQP(){
     let vvPC = document.querySelector('#vv-pc').value
     let qe = document.querySelector('#qe').value
@@ -22,6 +28,12 @@ function calcularQP(){
         document.getElementById('resultado-qp').innerHTML = ''
     }
 }
+document.querySelector('#vv-pc').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') calcularQP();
+});
+document.querySelector('#qe').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') calcularQP();
+});
 function calcular10QE(){
     let dezqe = document.querySelector('#dezQE').value
     document.getElementById('resultado10QE').innerHTML = Math.floor(dezqe * 0.1)
@@ -29,6 +41,9 @@ function calcular10QE(){
         document.getElementById('resultado10QE').innerHTML = ""
     }
 }
+document.querySelector('#dezQE').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') calcular10QE();
+});
 function calcular80QE(){
     let oitentaqe = document.querySelector('#oitentaQE').value
     document.getElementById('resultado80QE').innerHTML = Math.floor(oitentaqe*0.8)
@@ -36,6 +51,9 @@ function calcular80QE(){
         document.getElementById('resultado80QE').innerHTML = ""
     }
 }
+document.querySelector('#oitentaQE').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') calcular80QE();
+});
 function calcularMS1(){
     let msVvPc = document.querySelector('#ms-vv-pc').value
     let msQpPc = document.querySelector('#ms-qp-pc').value
@@ -45,6 +63,12 @@ function calcularMS1(){
         document.getElementById('resultado-ms-um').innerHTML = ''
     }
 }
+document.querySelector('#ms-vv-pc').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') calcularMS1();
+});
+document.querySelector('#ms-qp-pc').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') calcularMS1();
+});
 function calcular20QE(){
     let vinteqe = document.querySelector('#vinteQE').value
     document.getElementById('resultado20QE').innerHTML = Math.floor(vinteqe * 0.2)
@@ -52,6 +76,9 @@ function calcular20QE(){
         document.getElementById('resultado20QE').innerHTML = ""
     }
 }
+document.querySelector('#vinteQE').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') calcular20QE();
+});
 function calcularMSX() {
     let vvPC = document.querySelector('#ms-vv-pc-x').value
     let qpPC = document.querySelector('#ms-qp-pc-x').value
@@ -62,3 +89,12 @@ function calcularMSX() {
         document.getElementById('resultadomsx').innerHTML = ''
     }
 }
+document.querySelector('#ms-vv-pc-x').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') calcularMSX();
+});
+document.querySelector('#ms-qp-pc-x').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') calcularMSX();
+});
+document.querySelector('#ms-vs-pc-x').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') calcularMSX();
+});
