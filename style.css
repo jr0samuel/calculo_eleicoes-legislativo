@@ -24,6 +24,7 @@ main {
     border: 1px solid rebeccapurple;
     text-align: center;
     padding: 10px;
+    cursor: default;
 }
 .container{
     border: 1px solid black;
@@ -47,7 +48,7 @@ input{
     color:burlywood;
 }
 input[type="button"]{
-    cursor: pointer;
+    cursor: default;
 }
 .quociente{
     text-align: center;
