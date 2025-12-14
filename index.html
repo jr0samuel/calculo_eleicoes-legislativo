@@ -32,7 +32,7 @@
                 </form>
                 <p id="resultado-qp"></p>
                 <br><br>
-                <h3>Se o partido/coligação teve QP igual a zero, não vai eleger agora. Se o partido/coligação teve QP igual a dois, confira se os dois candidatos mais votados receberam votos nominais pelo menos igual a 10% do QE, se um deles não recebeu, a vaga fica para a Sobra, e assim sucessivamente</h3><br>
+                <h3>Se o partido/coligação teve QP 0, não vai eleger agora. Se o partido/coligação teve, por exemplo, QP 2, confira se os dois candidatos mais votados receberam votos nominais pelo menos igual a 10% do QE, se um deles não recebeu, a vaga fica para a Sobra, e assim sucessivamente</h3><br>
                 <form>
                     <span>
                         <input class="placeholder-texto" placeholder="Digite o QE para calcular 10%" id="dez-qe">
@@ -49,7 +49,7 @@
             </div>
             <br>
             <div class="quociente">
-                <h3>O partido/coligação só pode participar da sobra se tiver recebido votos válidos pelo menos igual a 80% do QE</h3><br>
+                <h3>O partido/coligação só pode participar da sobra se tiver recebido votos válidos pelo menos igual a 80% do QE, ainda que tenha tido QP 0</h3><br>
                 <form>
                     <span>
                         <input class="placeholder-texto" placeholder="Digite o QE para calcular 80%" id="oitenta-qe">
@@ -57,7 +57,7 @@
                     </span>
                 </form>
                 <p id="resultado-oitenta-qe"></p><br><br>
-                <h3>Na primeira rodada, esse cálculo vale para todos os partidos/coligações, depois vale só para os que não conseguiram vagas durante as rodadas</h3><br>
+                <h3>Na primeira rodada, esse cálculo vale para todos os partidos/coligações que tiveram pelo menos 80% do QE, depois vale só para os que não conseguiram vagas durante as rodadas, e os que conseguiram, fazem o próximo cálculo de acordo com o número de vagas que conseguiram</h3><br>
                 <form>
                     <input class="placeholder-texto" placeholder="Votos válidos do partido/coligação" id="ms-vv-pc">
                     <input class="placeholder-texto" placeholder="QP do partido/coligação" id="ms-qp-pc">
@@ -65,7 +65,7 @@
                     <input type="button" value="Calcular" onclick="calcularMS1()">
                 </form>
                 <p id="resultado-ms-um"></p><br><br>
-                <h3>Confira qual partido/coligação venceu a rodada e veja se o candidato mais votado recebeu votos nominais pelo menos igual a 20% do QE, se não recebeu, veja o candidato do partido/coligação que ficou em segundo na rodada, e assim sucessivamente</h3><br>
+                <h3>Confira qual partido/coligação venceu a rodada e veja se há candidato que teve votos nominais pelo menos igual a 20% do QE, se não teve, veja o candidato do partido/coligação que ficou em segundo na rodada, e assim sucessivamente</h3><br>
                 <form>
                     <span>
                         <input class="placeholder-texto" placeholder="Digite o QE para calcular 20%" id="vinte-qe">
@@ -76,11 +76,11 @@
             </div>
             <br><hr><br>
             <div class="quociente">
-                <h3>O cálculo abaixo vale somente para os partidos/coligações que ganharam alguma vaga na sobra, para isso, digite também a quantidade de vagas obtidas</h3><br>
+                <h3>O cálculo abaixo vale somente para os partidos/coligações que ganharam alguma vaga na sobra, para isso, digite também a quantidade de vagas obtidas nas rodadas</h3><br>
                 <form>
                     <input class="placeholder-texto" placeholder="Votos válidos do partido/coligação" id="ms-vv-pc-x">
                     <input class="placeholder-texto" placeholder="QP do partido/coligação" id="ms-qp-pc-x">
-                    <input class="placeholder-texto" placeholder="Vagas obtidas na sobra" id="ms-vs-pc-x">
+                    <input class="placeholder-texto" placeholder="Vagas obtidas nas sobras" id="ms-vs-pc-x">
                     <br><br>
                     <input type="button" value="Calcular" onclick="calcularMSX()">
                 </form>
