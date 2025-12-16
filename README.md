@@ -26,17 +26,10 @@ https://www.justicaeleitoral.jus.br/++theme++justica_eleitoral/pdfjs/web/viewer.
 
 #
 #
-# Breve Análise de Dados
-### Jupyter Notebook no VSCode
-#### Primeiro, precisa dos dados: candidatos, votos, partidos/coligações, etc. No exemplo, fiz a tabela na mão com base nas informações de sites, mas como a cidade escolhida é pequena, não foi difícil
-##### Obs: na imagem abaixo, mostra "Eleito por Média", se refere às sobras, também chamada de "média das sobras"
+## Cálculos na prática
+#### Primeiro, precisa dos dados: candidatos, votos, partidos/coligações, etc. No exemplo, fiz tudo na mão com base nas informações de sites, mas como a cidade escolhida é pequena, não foi difícil.
 <br>
 
-![](https://github.com/user-attachments/assets/80e65ae4-9a38-40c8-ae4d-212f0d422ee7)
-
-![](https://github.com/user-attachments/assets/dc072371-5ea3-44f2-9d50-9f46e4605aed)
-
-![](https://github.com/user-attachments/assets/19792f87-3848-4c37-98b3-e611f75623a1)
 
 
 #
