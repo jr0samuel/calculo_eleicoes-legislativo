@@ -99,3 +99,20 @@ document.querySelector('#ms-qp-pc-x').addEventListener('keydown', function(e) {
 document.querySelector('#ms-vs-pc-x').addEventListener('keydown', function(e) {
     if (e.key === 'Enter') { e.preventDefault(); calcularMSX(); }
 });
+
+document.querySelectorAll('input[type="button"]').forEach(btn=>{
+    btn.addEventListener('keydown', function(evt){
+        if((evt.key === "Enter" || evt.key === " ") && document.activeElement === this){
+            evt.preventDefault();
+            document.activeElement.classList.add("pressed");
+        };
+    });
+})
+document.querySelectorAll('input[type="button"]').forEach(btn=>{
+    btn.addEventListener('keyup', function(evt){
+        if((evt.key === "Enter" || evt.key === " ") && document.activeElement === this){
+            document.activeElement.classList.remove("pressed");
+            this.click();
+        };
+    });
+})

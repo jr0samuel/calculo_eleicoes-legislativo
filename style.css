@@ -56,6 +56,9 @@ input[type="button"]{
 p{
     display: inline;
 }
+.pressed{
+    transform: scale(0.95);
+}
 .texto{
     margin: 1px 50px;
 }
