@@ -30,6 +30,6 @@ https://www.justicaeleitoral.jus.br/++theme++justica_eleitoral/pdfjs/web/viewer.
 #### Primeiro, precisa dos dados: candidatos, votos, partidos/coligações, etc. No exemplo, fiz tudo na mão com base nas informações de sites, mas como a cidade escolhida é pequena, não foi difícil.
 <br>
 
-
+![Captura-De-Tela](https://github.com/user-attachments/assets/11965aa1-29bd-4241-9354-97ee5e6425b4)
 
 #
