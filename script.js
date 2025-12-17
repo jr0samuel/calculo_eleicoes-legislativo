@@ -13,12 +13,18 @@ function calcularQE(){
         document.getElementById('resultado-qe').innerHTML = ""
     }
 }
-document.querySelector('#vv-e').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') { e.preventDefault(); calcularQE(); }
-});
-document.querySelector('#num-vp').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') { e.preventDefault(); calcularQE(); }
-});
+document.querySelectorAll('.c1').forEach(c1 => {
+    c1.addEventListener('keydown', e=>{
+        let cbtn = document.querySelector('.c-1');
+        if (e.key === 'Enter') { e.preventDefault(); cbtn.classList.add("pressed"); }
+    })
+})
+document.querySelectorAll('.c1').forEach(c1 => {
+    c1.addEventListener('keyup', e=>{
+        let cbtn = document.querySelector('.c-1');
+        if (e.key === 'Enter') { calcularQE(); cbtn.classList.remove("pressed"); }
+    })
+})
 function calcularQP(){
     let vvPC = parseInt(document.querySelector('#vv-pc').value)
     let qe = parseInt(document.querySelector('#qe').value)
@@ -28,12 +34,18 @@ function calcularQP(){
         document.getElementById('resultado-qp').innerHTML = ''
     }
 }
-document.querySelector('#vv-pc').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') { e.preventDefault(); calcularQP(); }
-});
-document.querySelector('#qe').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') { e.preventDefault(); calcularQP(); }
-});
+document.querySelectorAll('.c2').forEach(c2 => {
+    c2.addEventListener('keydown', e=>{
+        let cbtn = document.querySelector('.c-2');
+        if (e.key === 'Enter') { e.preventDefault(); cbtn.classList.add("pressed"); }
+    })
+})
+document.querySelectorAll('.c2').forEach(c2 => {
+    c2.addEventListener('keyup', e=>{
+        let cbtn = document.querySelector('.c-2');
+        if (e.key === 'Enter') { calcularQP(); cbtn.classList.remove("pressed"); }
+    })
+})
 function calcular10QE(){
     let dezqe = parseInt(document.querySelector('#dez-qe').value)
     document.getElementById('resultado-dez-qe').innerHTML = Math.floor((dezqe * 0.1))
@@ -41,9 +53,18 @@ function calcular10QE(){
         document.getElementById('resultado-dez-qe').innerHTML = ""
     }
 }
-document.querySelector('#dez-qe').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') { e.preventDefault(); calcular10QE(); }
-});
+document.querySelectorAll('.c3').forEach(c3 => {
+    c3.addEventListener('keydown', e=>{
+        let cbtn = document.querySelector('.c-3');
+        if (e.key === 'Enter') { e.preventDefault(); cbtn.classList.add("pressed"); }
+    })
+})
+document.querySelectorAll('.c3').forEach(c3 => {
+    c3.addEventListener('keyup', e=>{
+        let cbtn = document.querySelector('.c-3');
+        if (e.key === 'Enter') { calcular10QE(); cbtn.classList.remove("pressed"); }
+    })
+})
 function calcular80QE(){
     let oitentaqe = parseInt(document.querySelector('#oitenta-qe').value)
     document.getElementById('resultado-oitenta-qe').innerHTML = Math.floor((oitentaqe*0.8))
@@ -51,9 +72,18 @@ function calcular80QE(){
         document.getElementById('resultado-oitenta-qe').innerHTML = ""
     }
 }
-document.querySelector('#oitenta-qe').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') { e.preventDefault(); calcular80QE(); }
-});
+document.querySelectorAll('.c4').forEach(c4 => {
+    c4.addEventListener('keydown', e=>{
+        let cbtn = document.querySelector('.c-4');
+        if (e.key === 'Enter') { e.preventDefault(); cbtn.classList.add("pressed"); }
+    })
+})
+document.querySelectorAll('.c4').forEach(c4 => {
+    c4.addEventListener('keyup', e=>{
+        let cbtn = document.querySelector('.c-4');
+        if (e.key === 'Enter') { calcular80QE(); cbtn.classList.remove("pressed"); }
+    })
+})
 function calcularMS1(){
     let msVvPc = parseInt(document.querySelector('#ms-vv-pc').value)
     let msQpPc = parseInt(document.querySelector('#ms-qp-pc').value)
@@ -63,12 +93,18 @@ function calcularMS1(){
         document.getElementById('resultado-ms-um').innerHTML = ''
     }
 }
-document.querySelector('#ms-vv-pc').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') { e.preventDefault(); calcularMS1(); }
-});
-document.querySelector('#ms-qp-pc').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') { e.preventDefault(); calcularMS1(); }
-});
+document.querySelectorAll('.c5').forEach(c5 => {
+    c5.addEventListener('keydown', e=>{
+        let cbtn = document.querySelector('.c-5');
+        if (e.key === 'Enter') { e.preventDefault(); cbtn.classList.add("pressed"); }
+    })
+})
+document.querySelectorAll('.c5').forEach(c5 => {
+    c5.addEventListener('keyup', e=>{
+        let cbtn = document.querySelector('.c-5');
+        if (e.key === 'Enter') { calcularMS1(); cbtn.classList.remove("pressed"); }
+    })
+})
 function calcular20QE(){
     let vinteqe = parseInt(document.querySelector('#vinte-qe').value)
     let conta = vinteqe * 0.2
@@ -77,9 +113,18 @@ function calcular20QE(){
         document.getElementById('resultado-vinte-qe').innerHTML = ""
     }
 }
-document.querySelector('#vinte-qe').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') { e.preventDefault(); calcular20QE(); }
-});
+document.querySelectorAll('.c6').forEach(c6 => {
+    c6.addEventListener('keydown', e=>{
+        let cbtn = document.querySelector('.c-6');
+        if (e.key === 'Enter') { e.preventDefault(); cbtn.classList.add("pressed"); }
+    })
+})
+document.querySelectorAll('.c6').forEach(c6 => {
+    c6.addEventListener('keyup', e=>{
+        let cbtn = document.querySelector('.c-6');
+        if (e.key === 'Enter') { calcular20QE(); cbtn.classList.remove("pressed"); }
+    })
+})
 function calcularMSX() {
     let vvPC = parseInt(document.querySelector('#ms-vv-pc-x').value)
     let qpPC = parseInt(document.querySelector('#ms-qp-pc-x').value)
@@ -90,16 +135,18 @@ function calcularMSX() {
         document.getElementById('resultadomsx').innerHTML = ''
     }
 }
-document.querySelector('#ms-vv-pc-x').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') { e.preventDefault(); calcularMSX(); }
-});
-document.querySelector('#ms-qp-pc-x').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') { e.preventDefault(); calcularMSX(); }
-});
-document.querySelector('#ms-vs-pc-x').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') { e.preventDefault(); calcularMSX(); }
-});
-
+document.querySelectorAll('.c7').forEach(c7 => {
+    c7.addEventListener('keydown', e=>{
+        let cbtn = document.querySelector('.c-7');
+        if (e.key === 'Enter') { e.preventDefault(); cbtn.classList.add("pressed"); }
+    })
+})
+document.querySelectorAll('.c7').forEach(c7 => {
+    c7.addEventListener('keyup', e=>{
+        let cbtn = document.querySelector('.c-7');
+        if (e.key === 'Enter') { calcularMSX(); cbtn.classList.remove("pressed"); }
+    })
+})
 document.querySelectorAll('input[type="button"]').forEach(btn=>{
     btn.addEventListener('keydown', function(evt){
         if((evt.key === "Enter" || evt.key === " ") && document.activeElement === this){

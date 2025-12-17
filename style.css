@@ -47,6 +47,10 @@ input{
 .placeholder-texto::placeholder{
     color:burlywood;
 }
+.placeholder-texto::selection{
+    color: burlywood;
+    background-color: darkslateblue;
+}
 input[type="button"]{
     cursor: default;
 }

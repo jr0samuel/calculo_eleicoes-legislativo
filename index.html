@@ -14,10 +14,10 @@
             <div class="quociente">
                 <h3>Comece calculando o Quociente Eleitoral (QE)</h3><br>
                 <form action="">
-                    <input id="vv-e" class="placeholder-texto" placeholder="Votos Válidos da Eleição">
-                    <input id="num-vp" class="placeholder-texto" placeholder="Nº de Vagas do Parlamento">
+                    <input id="vv-e" class="placeholder-texto c1" placeholder="Votos Válidos da Eleição">
+                    <input id="num-vp" class="placeholder-texto c1" placeholder="Nº de Vagas do Parlamento">
                     <br><br>
-                    <input type="button" value="Calcular" onclick="calcularQE()">
+                    <input type="button" value="Calcular" onclick="calcularQE()" class="c-1">
                 </form>
                 <p id="resultado-qe"></p>
             </div>
@@ -25,18 +25,18 @@
             <div class="quociente">
                 <h3>Agora calcule o Quociente Partidário (QP) de cada partido/coligação</h3><br>
                 <form action="">
-                    <input id="vv-pc" class="placeholder-texto" placeholder="Votos válidos do partido/coligação">
-                    <input id="qe" class="placeholder-texto" placeholder="Quociente Eleitoral">
+                    <input id="vv-pc" class="placeholder-texto c2" placeholder="Votos válidos do partido/coligação">
+                    <input id="qe" class="placeholder-texto c2" placeholder="Quociente Eleitoral">
                     <br><br>
-                    <input type="button" value="Calcular" onclick="calcularQP()">
+                    <input type="button" value="Calcular" onclick="calcularQP()" class="c-2">
                 </form>
                 <p id="resultado-qp"></p>
                 <br><br>
                 <h3>Se o partido/coligação teve QP 0, não vai eleger agora. Se o partido/coligação teve, por exemplo, QP 2, confira se os dois candidatos mais votados receberam votos nominais pelo menos igual a 10% do QE, se um deles não recebeu, a vaga fica para a Sobra, e assim sucessivamente</h3><br>
                 <form>
                     <span>
-                        <input class="placeholder-texto" placeholder="Digite o QE para calcular 10%" id="dez-qe">
-                        <input type="button" value="Calcular" onclick="calcular10QE()">
+                        <input class="placeholder-texto c3" placeholder="Digite o QE para calcular 10%" id="dez-qe">
+                        <input type="button" value="Calcular" onclick="calcular10QE()" class="c-3">
                     </span>
                 </form>
                 <p id="resultado-dez-qe"></p>
@@ -52,24 +52,24 @@
                 <h3>O partido/coligação só pode participar da sobra se tiver recebido votos válidos pelo menos igual a 80% do QE, ainda que tenha tido QP 0</h3><br>
                 <form>
                     <span>
-                        <input class="placeholder-texto" placeholder="Digite o QE para calcular 80%" id="oitenta-qe">
-                        <input type="button" value="Calcular" onclick="calcular80QE()">
+                        <input class="placeholder-texto c4" placeholder="Digite o QE para calcular 80%" id="oitenta-qe">
+                        <input type="button" value="Calcular" onclick="calcular80QE()" class="c-4">
                     </span>
                 </form>
                 <p id="resultado-oitenta-qe"></p><br><br>
                 <h3>Na primeira rodada, esse cálculo vale para todos os partidos/coligações que tiveram pelo menos 80% do QE, depois vale só para os que não conseguiram vagas durante as rodadas, e os que conseguiram, fazem o próximo cálculo de acordo com o número de vagas que conseguiram</h3><br>
                 <form>
-                    <input class="placeholder-texto" placeholder="Votos válidos do partido/coligação" id="ms-vv-pc">
-                    <input class="placeholder-texto" placeholder="QP do partido/coligação" id="ms-qp-pc">
+                    <input class="placeholder-texto c5" placeholder="Votos válidos do partido/coligação" id="ms-vv-pc">
+                    <input class="placeholder-texto c5" placeholder="QP do partido/coligação" id="ms-qp-pc">
                     <br><br>
-                    <input type="button" value="Calcular" onclick="calcularMS1()">
+                    <input type="button" value="Calcular" onclick="calcularMS1()" class="c-5">
                 </form>
                 <p id="resultado-ms-um"></p><br><br>
                 <h3>Confira qual partido/coligação venceu a rodada e veja se há candidato que teve votos nominais pelo menos igual a 20% do QE, se não teve, veja o candidato do partido/coligação que ficou em segundo na rodada, e assim sucessivamente</h3><br>
                 <form>
                     <span>
-                        <input class="placeholder-texto" placeholder="Digite o QE para calcular 20%" id="vinte-qe">
-                        <input type="button" value="Calcular" onclick="calcular20QE()">
+                        <input class="placeholder-texto c6" placeholder="Digite o QE para calcular 20%" id="vinte-qe">
+                        <input type="button" value="Calcular" onclick="calcular20QE()" class="c-6">
                     </span>
                 </form>
                 <p id="resultado-vinte-qe"></p>
@@ -78,11 +78,11 @@
             <div class="quociente">
                 <h3>O cálculo abaixo vale somente para os partidos/coligações que ganharam alguma vaga na sobra, para isso, digite também a quantidade de vagas obtidas nas rodadas</h3><br>
                 <form>
-                    <input class="placeholder-texto" placeholder="Votos válidos do partido/coligação" id="ms-vv-pc-x">
-                    <input class="placeholder-texto" placeholder="QP do partido/coligação" id="ms-qp-pc-x">
-                    <input class="placeholder-texto" placeholder="Vagas obtidas nas sobras" id="ms-vs-pc-x">
+                    <input class="placeholder-texto c7" placeholder="Votos válidos do partido/coligação" id="ms-vv-pc-x">
+                    <input class="placeholder-texto c7" placeholder="QP do partido/coligação" id="ms-qp-pc-x">
+                    <input class="placeholder-texto c7" placeholder="Vagas obtidas nas sobras" id="ms-vs-pc-x">
                     <br><br>
-                    <input type="button" value="Calcular" onclick="calcularMSX()">
+                    <input type="button" value="Calcular" onclick="calcularMSX()" class="c-7">
                 </form>
                 <p id="resultadomsx"></p><br>
             </div>
