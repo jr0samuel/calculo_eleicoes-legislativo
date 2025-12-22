@@ -4,7 +4,7 @@ Você pode ver o sistema no site:
 https://calculodaseleicoes.vercel.app/
 
 Se quiser ver o sistema junto com o código, há os links abaixo:  
-https://jsfiddle.net/j_r_Samuel_Jr/d0o68tuL/18/
+https://jsfiddle.net/j_r_Samuel_Jr/d0o68tuL/19/
 
 https://codepen.io/jrSamuel-Jr/pen/BaXROVz
 
