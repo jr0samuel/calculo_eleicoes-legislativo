@@ -47,7 +47,7 @@ input{
 .placeholder-texto::placeholder{
     color:burlywood;
 }
-.placeholder-texto::selection{
+.placeholder-texto::selection, p::selection{
     color: burlywood;
     background-color: darkslateblue;
 }
@@ -59,6 +59,12 @@ input[type="button"]{
 }
 p{
     display: inline;
+    color: wheat;
+}
+.quociente p{
+    font-size: 1.25rem;
+    color: burlywood;
+    font-weight: bold;
 }
 .pressed{
     transform: scale(0.95);
