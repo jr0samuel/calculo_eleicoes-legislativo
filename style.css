@@ -47,7 +47,7 @@ input{
 .placeholder-texto::placeholder{
     color:burlywood;
 }
-.placeholder-texto::selection, p::selection{
+.placeholder-texto::selection, p::selection, h2::selection, h3::selection, a::selection{
     color: burlywood;
     background-color: darkslateblue;
 }
