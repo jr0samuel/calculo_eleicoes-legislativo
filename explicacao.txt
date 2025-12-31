@@ -1,4 +1,4 @@
-Como funciona o cálculo para eleger vereadores e deputados estaduais e federais?
+Como funcionam os cálculos para eleger vereadores e deputados estaduais e federais?
 
 Primeiro, precisa saber a quantidade de votos válidos. Os votos válidos são todos os votos, exceto brancos e nulos e abstenções.
 
