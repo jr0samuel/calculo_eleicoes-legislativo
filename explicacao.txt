@@ -12,3 +12,13 @@ A primeira rodada é assim: votos válidos do partido dividido pelo QP do partid
 
 A segunda rodada é semelhante à primeira, a diferença é que o partido que ganhou vaga na Sobra terá uma alteração no cálculo, será assim: votos
 válidos do partido dividido pelo QP do partido + 1 + quantidade de vagas ganhas na Sobra, pode ser 1 ou 2 ou 3, etc. Siga essa lógica em todas as rodadas.
+
+
+https://www.planalto.gov.br/ccivil_03/Leis/L4737compilado.htm
+Veja especialmente o Capítulo IV, a partir do Art. 105, do Código Eleitoral.
+
+https://www.tre-sp.jus.br/++theme++justica_eleitoral/pdfjs/web/viewer.html?file=https://www.tre-sp.jus.br/comunicacao/arquivos/eleicoes-2024-quociente-eleitoral/@@download/file/Documento%20quociente-1-mesclado%20%284%29.pdf
+
+https://www.tre-sp.jus.br/++theme++justica_eleitoral/pdfjs/web/viewer.html?file=https://www.tre-sp.jus.br/eleicoes/eleicoes-anteriores/eleicoes-2022/arquivos/calculo-do-quociente-eleitoral/@@download/file/quociente_eleitoral_v2.pdf
+
+https://www.justicaeleitoral.jus.br/++theme++justica_eleitoral/pdfjs/web/viewer.html?file=https://www.justicaeleitoral.jus.br/arquivos/tre-sp-distribuicao-de-cadeiras-pelo-sistema-de-representacao-proporcional/@@download/file/tre-sp-distribuicao-de-cadeiras-pelo-sistema-de-representacao-proporcional.pdf
