@@ -4,7 +4,7 @@ Você pode ver o sistema no site:
 https://calculodaseleicoes.vercel.app/
 
 Se quiser ver o sistema junto com o código, há os links abaixo:  
-https://jsfiddle.net/j_r_Samuel_Jr/d0o68tuL/22/
+https://jsfiddle.net/j_r_Samuel_Jr/d0o68tuL/23/
 
 https://codepen.io/jrSamuel-Jr/pen/BaXROVz
 <br>
@@ -15,11 +15,15 @@ https://codepen.io/jrSamuel-Jr/pen/xxvrZLz
 <br>
 https://codepen.io/collection/bGgPoQ
 
-https://jsfiddle.net/j_r_Samuel_Jr/r9cj8tkw/22/
+https://jsfiddle.net/j_r_Samuel_Jr/r9cj8tkw/23/
 
 #
 
 Links da Justiça Eleitoral com explicações
+
+https://www.planalto.gov.br/ccivil_03/Leis/L4737compilado.htm
+<br>
+Veja especialmente o Capítulo IV, a partir do Art. 105, do Código Eleitoral.
 
 https://www.tre-sp.jus.br/++theme++justica_eleitoral/pdfjs/web/viewer.html?file=https://www.tre-sp.jus.br/comunicacao/arquivos/eleicoes-2024-quociente-eleitoral/@@download/file/Documento%20quociente-1-mesclado%20%284%29.pdf
 

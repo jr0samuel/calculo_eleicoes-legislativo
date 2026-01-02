@@ -25,6 +25,9 @@ document.querySelectorAll('.c1').forEach(c1 => {
         if (e.key === 'Enter') { calcularQE(); cbtn.classList.remove("pressed"); }
     })
 })
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 function calcularQP(){
     let vvPC = parseInt(document.querySelector('#vv-pc').value)
     let qe = parseInt(document.querySelector('#qe').value)
@@ -46,9 +49,13 @@ document.querySelectorAll('.c2').forEach(c2 => {
         if (e.key === 'Enter') { calcularQP(); cbtn.classList.remove("pressed"); }
     })
 })
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 function calcular10QE(){
     let dezqe = parseInt(document.querySelector('#dez-qe').value)
-    document.getElementById('resultado-dez-qe').innerHTML = Math.floor((dezqe * 0.1))
+    let conta = dezqe * 0.1
+    document.getElementById('resultado-dez-qe').innerHTML = Math.floor(conta)
     if (isNaN(dezqe) || !isFinite(dezqe) || dezqe === '') {
         document.getElementById('resultado-dez-qe').innerHTML = ""
     }
@@ -65,9 +72,13 @@ document.querySelectorAll('.c3').forEach(c3 => {
         if (e.key === 'Enter') { calcular10QE(); cbtn.classList.remove("pressed"); }
     })
 })
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 function calcular80QE(){
     let oitentaqe = parseInt(document.querySelector('#oitenta-qe').value)
-    document.getElementById('resultado-oitenta-qe').innerHTML = Math.floor((oitentaqe*0.8))
+    let conta = oitentaqe * 0.8
+    document.getElementById('resultado-oitenta-qe').innerHTML = Math.floor(conta)
     if (isNaN(oitentaqe) || !isFinite(oitentaqe) || oitentaqe === '') {
         document.getElementById('resultado-oitenta-qe').innerHTML = ""
     }
@@ -84,11 +95,14 @@ document.querySelectorAll('.c4').forEach(c4 => {
         if (e.key === 'Enter') { calcular80QE(); cbtn.classList.remove("pressed"); }
     })
 })
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 function calcularMS1(){
     let msVvPc = parseInt(document.querySelector('#ms-vv-pc').value)
     let msQpPc = parseInt(document.querySelector('#ms-qp-pc').value)
-    let conta = (msVvPc/(msQpPc+1))
-    document.getElementById('resultado-ms-um').innerHTML = Math.floor(conta)
+    let conta = msVvPc/(msQpPc+1)
+    document.getElementById('resultado-ms-um').innerHTML = conta
     if (isNaN(conta) || !isFinite(conta) || msVvPc === '' || msQpPc === '') {
         document.getElementById('resultado-ms-um').innerHTML = ''
     }
@@ -105,6 +119,9 @@ document.querySelectorAll('.c5').forEach(c5 => {
         if (e.key === 'Enter') { calcularMS1(); cbtn.classList.remove("pressed"); }
     })
 })
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 function calcular20QE(){
     let vinteqe = parseInt(document.querySelector('#vinte-qe').value)
     let conta = vinteqe * 0.2
@@ -125,12 +142,15 @@ document.querySelectorAll('.c6').forEach(c6 => {
         if (e.key === 'Enter') { calcular20QE(); cbtn.classList.remove("pressed"); }
     })
 })
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 function calcularMSX() {
     let vvPC = parseInt(document.querySelector('#ms-vv-pc-x').value)
     let qpPC = parseInt(document.querySelector('#ms-qp-pc-x').value)
     let vsPC = parseInt(document.querySelector('#ms-vs-pc-x').value)
-    let conta = (vvPC / (qpPC + 1 + vsPC))
-    document.getElementById('resultadomsx').innerHTML = Math.floor(conta)
+    let conta = vvPC / (qpPC + 1 + vsPC)
+    document.getElementById('resultadomsx').innerHTML = conta
     if (isNaN(conta) || !isFinite(conta) || vvPC === '' || qpPC === '' || vsPC === '' || vsPC === 0) {
         document.getElementById('resultadomsx').innerHTML = ''
     }
@@ -147,6 +167,9 @@ document.querySelectorAll('.c7').forEach(c7 => {
         if (e.key === 'Enter') { calcularMSX(); cbtn.classList.remove("pressed"); }
     })
 })
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 document.querySelectorAll('input[type="button"]').forEach(btn=>{
     btn.addEventListener('keydown', function(evt){
         if((evt.key === "Enter" || evt.key === " ") && document.activeElement === this){
