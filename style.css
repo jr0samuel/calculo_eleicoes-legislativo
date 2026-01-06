@@ -83,7 +83,7 @@ a {
     color: burlywood;
 }
 @media screen and (max-width: 525px) {
-    main {
+    main, .texto {
         width: 305px;
         height: auto;
         min-height: 100vh;
