@@ -71,6 +71,7 @@ p{
 }
 .texto{
     margin: 1px 50px;
+    text-align: justify;
 }
 a {
     text-decoration: none;
