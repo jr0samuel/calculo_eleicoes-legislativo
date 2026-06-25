@@ -82,6 +82,12 @@ a {
 .artigo-texto:hover, .artigo-texto:focus {
     color: burlywood;
 }
+.adendos{
+    color:blanchedalmond;
+    text-decoration:underline;
+    font-style:italic;
+    word-break:break-word;
+}
 @media screen and (max-width: 525px) {
     main, .texto {
         width: 305px;
