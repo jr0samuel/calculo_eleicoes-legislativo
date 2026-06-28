@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculo da Eleição</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="icone-urna.jpg" type="image/jpg">
+    <link rel="icon" href="./assets/icone-urna.jpg" type="image/jpg">
 </head>
 <body>
     <main>
@@ -23,16 +23,16 @@
             </div>
             <br><hr><br>
             <div class="quociente">
-                <h3>Agora calcule o Quociente Partidário (QP) de cada partido/coligação</h3><br>
+                <h3>Agora calcule o Quociente Partidário (QP) de cada partido/federação</h3><br>
                 <form action="">
-                    <input id="vv-pc" class="placeholder-texto c2" placeholder="Votos válidos do partido/coligação">
+                    <input id="vv-pc" class="placeholder-texto c2" placeholder="Votos válidos do partido/federação">
                     <input id="qe" class="placeholder-texto c2" placeholder="Quociente Eleitoral">
                     <br><br>
                     <input type="button" value="Calcular" onclick="calcularQP()" class="c-2">
                 </form>
                 <p id="resultado-qp"></p>
                 <br><br>
-                <h3>Se o partido/coligação teve QP 0, não vai eleger agora. Se teve QP 2, por exemplo, veja se os dois candidatos mais votados receberam votos pelo menos igual a 10% do QE, se um deles não recebeu, tal vaga fica para a Sobra, e assim sucessivamente</h3><br>
+                <h3>Se o partido/federação teve QP 0, não vai eleger agora. Se teve QP 2, por exemplo, veja se os dois candidatos mais votados desse partido receberam votos pelo menos igual a 10% do QE, se um deles não recebeu, tal vaga fica para a Sobra, e assim sucessivamente para todos os partidos que tiveram QP maior que 0</h3><br>
                 <form>
                     <span>
                         <input class="placeholder-texto c3" placeholder="Digite o QE para calcular 10%" id="dez-qe">
@@ -49,7 +49,7 @@
             </div>
             <br>
             <div class="quociente">
-                <h3>O partido/coligação só pode participar da Sobra se tiver recebido votos pelo menos igual a 80% do QE, ainda que tenha tido QP 0</h3><br>
+                <h3>O partido/federação só pode participar da Sobra se tiver recebido votos pelo menos igual a 80% do QE, ainda que tenha tido QP 0</h3><br>
                 <form>
                     <span>
                         <input class="placeholder-texto c4" placeholder="Digite o QE para calcular 80%" id="oitenta-qe">
@@ -57,15 +57,15 @@
                     </span>
                 </form>
                 <p id="resultado-oitenta-qe"></p><br><br>
-                <h3>Na primeira rodada, esse cálculo vale para todos os partidos/coligações que receberam votos pelo menos 80% do QE, depois vale só para os que não conseguiram vagas durante as rodadas, e os que conseguiram, fazem o próximo cálculo</h3><br>
+                <h3>Na primeira rodada, esse cálculo vale para todos os partidos/federações que estão na Sobra, depois vale só para os que não conseguiram vagas durante as rodadas, e os que conseguiram, fazem o próximo cálculo</h3><br>
                 <form>
-                    <input class="placeholder-texto c5" placeholder="Votos válidos do partido/coligação" id="ms-vv-pc">
-                    <input class="placeholder-texto c5" placeholder="QP do partido/coligação" id="ms-qp-pc">
+                    <input class="placeholder-texto c5" placeholder="Votos válidos do partido/federação" id="ms-vv-pc">
+                    <input class="placeholder-texto c5" placeholder="QP do partido/federação" id="ms-qp-pc">
                     <br><br>
                     <input type="button" value="Calcular" onclick="calcularMS1()" class="c-5">
                 </form>
                 <p id="resultado-ms-um"></p><br><br>
-                <h3>Confira qual partido/coligação venceu a rodada e veja se algum candidato recebeu votos pelo menos igual a 20% do QE, se nenhum recebeu, veja se o partido/coligação que ficou em segundo na rodada tem candidato com 20% do QE, e assim sucessivamente</h3><br>
+                <h3>Confira qual partido/federação venceu a rodada e veja se tem algum candidato que recebeu votos pelo menos igual a 20% do QE, se nenhum recebeu, veja se o partido/federação que ficou em segundo na rodada tem candidato com 20% do QE, e assim sucessivamente, mas se ninguém tiver 20%, elege um candidato do partido/federação que ganhou a rodada</h3><br>
                 <form>
                     <span>
                         <input class="placeholder-texto c6" placeholder="Digite o QE para calcular 20%" id="vinte-qe">
@@ -76,10 +76,10 @@
             </div>
             <br><hr><br>
             <div class="quociente">
-                <h3>O cálculo abaixo vale somente para os partidos/coligações que ganharam alguma vaga na sobra, para isso, digite também a quantidade de vagas obtidas nas rodadas</h3><br>
+                <h3>O cálculo abaixo vale somente para os partidos/federações que ganharam alguma vaga na sobra, para isso, digite também a quantidade de vagas obtidas nas rodadas</h3><br>
                 <form>
-                    <input class="placeholder-texto c7" placeholder="Votos válidos do partido/coligação" id="ms-vv-pc-x">
-                    <input class="placeholder-texto c7" placeholder="QP do partido/coligação" id="ms-qp-pc-x">
+                    <input class="placeholder-texto c7" placeholder="Votos válidos do partido/federação" id="ms-vv-pc-x">
+                    <input class="placeholder-texto c7" placeholder="QP do partido/federação" id="ms-qp-pc-x">
                     <input class="placeholder-texto c7" placeholder="Vagas obtidas nas sobras" id="ms-vs-pc-x">
                     <br><br>
                     <input type="button" value="Calcular" onclick="calcularMSX()" class="c-7">

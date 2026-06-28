@@ -8,14 +8,14 @@ body{
     color: black;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
-    margin-bottom: 50px;
-    margin-top: 30px;
+    margin: 30px 0;
+    padding: 0 1rem;
     min-height: 100vh;
 }
 main {
     width: 500px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +47,7 @@ input{
 .placeholder-texto::placeholder{
     color:burlywood;
 }
-.placeholder-texto::selection, p::selection, h2::selection, h3::selection, a::selection{
+*::selection{
     color: burlywood;
     background-color: darkslateblue;
 }
@@ -70,8 +70,12 @@ p{
     transform: scale(0.95);
 }
 .texto{
-    margin: 1px 50px;
     text-align: justify;
+    margin: 0 auto;
+    padding: 1px 25px;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
 }
 a {
     text-decoration: none;
@@ -89,8 +93,11 @@ a {
     font-style:italic;
     word-break:break-word;
 }
+img{
+    max-width: 525px;
+}
 @media screen and (max-width: 525px) {
-    main, .texto {
+    main {
         width: 305px;
         height: auto;
         min-height: 100vh;
