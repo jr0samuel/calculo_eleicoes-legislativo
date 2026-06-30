@@ -146,7 +146,7 @@ function calcularMSX() {
     let vsPC = parseInt(document.querySelector('#ms-vs-pc-x').value)
     let conta = vvPC / (qpPC + 1 + vsPC)
     document.getElementById('resultadomsx').innerHTML = conta
-    if (isNaN(conta) || !isFinite(conta) || vvPC === '' || qpPC === '' || vsPC === '' || vsPC === 0) {
+    if (isNaN(conta) || !isFinite(conta) || vvPC === '' || qpPC === '' || vsPC === '' || vsPC < 1) {
         document.getElementById('resultadomsx').innerHTML = ''
     }
 }
