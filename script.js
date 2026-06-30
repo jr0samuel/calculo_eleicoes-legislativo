@@ -1,17 +1,12 @@
 function calcularQE(){
-    let vvE = parseInt(document.querySelector('#vv-e').value)
-    let numVP = parseInt(document.querySelector('#num-vp').value)
-    let conta = (vvE / numVP)
-    let decimal = conta - Math.trunc(conta)
-    let primeiroDecimal = Math.trunc(decimal * 10)
-    if(primeiroDecimal <= 5){
-        document.getElementById('resultado-qe').innerHTML = Math.floor(vvE/numVP)
-    }else{
-        document.getElementById('resultado-qe').innerHTML = Math.ceil(conta)
-    }
-    if (isNaN(conta) || !isFinite(conta) || vvE === '' || numVP === '') {
-        document.getElementById('resultado-qe').innerHTML = ""
-    }
+    let vvE = Number(document.querySelector('#vv-e').value)
+    let numVP = Number(document.querySelector('#num-vp').value)
+    let conta = vvE / numVP
+    let strConta = conta.toFixed(7)
+    let [parteInteira, parteDecimal] = strConta.split('.')
+    let primeiroDecimal = parseInt(parteDecimal[0])
+    if (primeiroDecimal <= 5) document.getElementById('resultado-qe').innerHTML = parseInt(parteInteira)
+    if (primeiroDecimal > 5) document.getElementById('resultado-qe').innerHTML = (parseInt(parteInteira) + 1)
 }
 document.querySelectorAll('.c1').forEach(c1 => {
     c1.addEventListener('keydown', e=>{
